@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E96E865E2221100F00BACA27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E865D2221100F00BACA27 /* AppDelegate.swift */; };
+		E96E86602221100F00BACA27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E865F2221100F00BACA27 /* ViewController.swift */; };
+		E96E86652221101400BACA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96E86642221101400BACA27 /* Assets.xcassets */; };
+		E96E86682221101400BACA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96E86662221101400BACA27 /* LaunchScreen.storyboard */; };
+		E96E86732221101500BACA27 /* rechackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E86722221101500BACA27 /* rechackTests.swift */; };
+		E96E867E2221101500BACA27 /* rechackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E867D2221101500BACA27 /* rechackUITests.swift */; };
+		E96E868D2221188F00BACA27 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96E868C2221188F00BACA27 /* Alamofire.framework */; };
+		E96E869022211C2A00BACA27 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E868F22211C2A00BACA27 /* VideoPlayerViewController.swift */; };
+		E96E86922221391200BACA27 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96E86912221391200BACA27 /* PlayViewController.swift */; };
+		E96E8694222141AA00BACA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96E8693222141AA00BACA27 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E96E866F2221101500BACA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96E86522221100F00BACA27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96E86592221100F00BACA27;
+			remoteInfo = rechack;
+		};
+		E96E867A2221101500BACA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96E86522221100F00BACA27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96E86592221100F00BACA27;
+			remoteInfo = rechack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E96E865A2221100F00BACA27 /* rechack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rechack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96E865D2221100F00BACA27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E96E865F2221100F00BACA27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E96E86642221101400BACA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E96E86672221101400BACA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E96E86692221101400BACA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96E866E2221101400BACA27 /* rechackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rechackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96E86722221101500BACA27 /* rechackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rechackTests.swift; sourceTree = "<group>"; };
+		E96E86742221101500BACA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96E86792221101500BACA27 /* rechackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rechackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96E867D2221101500BACA27 /* rechackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rechackUITests.swift; sourceTree = "<group>"; };
+		E96E867F2221101500BACA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96E868C2221188F00BACA27 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E96E868F22211C2A00BACA27 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		E96E86912221391200BACA27 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		E96E8693222141AA00BACA27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E96E86572221100F00BACA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96E868D2221188F00BACA27 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E866B2221101400BACA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E86762221101500BACA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E96E86512221100F00BACA27 = {
+			isa = PBXGroup;
+			children = (
+				E96E865C2221100F00BACA27 /* rechack */,
+				E96E86712221101500BACA27 /* rechackTests */,
+				E96E867C2221101500BACA27 /* rechackUITests */,
+				E96E865B2221100F00BACA27 /* Products */,
+				E96E868B2221188F00BACA27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E96E865B2221100F00BACA27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E96E865A2221100F00BACA27 /* rechack.app */,
+				E96E866E2221101400BACA27 /* rechackTests.xctest */,
+				E96E86792221101500BACA27 /* rechackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E96E865C2221100F00BACA27 /* rechack */ = {
+			isa = PBXGroup;
+			children = (
+				E96E865D2221100F00BACA27 /* AppDelegate.swift */,
+				E96E8693222141AA00BACA27 /* Main.storyboard */,
+				E96E865F2221100F00BACA27 /* ViewController.swift */,
+				E96E86912221391200BACA27 /* PlayViewController.swift */,
+				E96E868F22211C2A00BACA27 /* VideoPlayerViewController.swift */,
+				E96E86642221101400BACA27 /* Assets.xcassets */,
+				E96E86662221101400BACA27 /* LaunchScreen.storyboard */,
+				E96E86692221101400BACA27 /* Info.plist */,
+			);
+			path = rechack;
+			sourceTree = "<group>";
+		};
+		E96E86712221101500BACA27 /* rechackTests */ = {
+			isa = PBXGroup;
+			children = (
+				E96E86722221101500BACA27 /* rechackTests.swift */,
+				E96E86742221101500BACA27 /* Info.plist */,
+			);
+			path = rechackTests;
+			sourceTree = "<group>";
+		};
+		E96E867C2221101500BACA27 /* rechackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E96E867D2221101500BACA27 /* rechackUITests.swift */,
+				E96E867F2221101500BACA27 /* Info.plist */,
+			);
+			path = rechackUITests;
+			sourceTree = "<group>";
+		};
+		E96E868B2221188F00BACA27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96E868C2221188F00BACA27 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E96E86592221100F00BACA27 /* rechack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96E86822221101500BACA27 /* Build configuration list for PBXNativeTarget "rechack" */;
+			buildPhases = (
+				E96E86562221100F00BACA27 /* Sources */,
+				E96E86572221100F00BACA27 /* Frameworks */,
+				E96E86582221100F00BACA27 /* Resources */,
+				E96E868E2221189C00BACA27 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rechack;
+			productName = rechack;
+			productReference = E96E865A2221100F00BACA27 /* rechack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E96E866D2221101400BACA27 /* rechackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96E86852221101500BACA27 /* Build configuration list for PBXNativeTarget "rechackTests" */;
+			buildPhases = (
+				E96E866A2221101400BACA27 /* Sources */,
+				E96E866B2221101400BACA27 /* Frameworks */,
+				E96E866C2221101400BACA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96E86702221101500BACA27 /* PBXTargetDependency */,
+			);
+			name = rechackTests;
+			productName = rechackTests;
+			productReference = E96E866E2221101400BACA27 /* rechackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E96E86782221101500BACA27 /* rechackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96E86882221101500BACA27 /* Build configuration list for PBXNativeTarget "rechackUITests" */;
+			buildPhases = (
+				E96E86752221101500BACA27 /* Sources */,
+				E96E86762221101500BACA27 /* Frameworks */,
+				E96E86772221101500BACA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96E867B2221101500BACA27 /* PBXTargetDependency */,
+			);
+			name = rechackUITests;
+			productName = rechackUITests;
+			productReference = E96E86792221101500BACA27 /* rechackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E96E86522221100F00BACA27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "南田宗太郎";
+				TargetAttributes = {
+					E96E86592221100F00BACA27 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E96E866D2221101400BACA27 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E96E86592221100F00BACA27;
+					};
+					E96E86782221101500BACA27 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E96E86592221100F00BACA27;
+					};
+				};
+			};
+			buildConfigurationList = E96E86552221100F00BACA27 /* Build configuration list for PBXProject "rechack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E96E86512221100F00BACA27;
+			productRefGroup = E96E865B2221100F00BACA27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E96E86592221100F00BACA27 /* rechack */,
+				E96E866D2221101400BACA27 /* rechackTests */,
+				E96E86782221101500BACA27 /* rechackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E96E86582221100F00BACA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96E8694222141AA00BACA27 /* Main.storyboard in Resources */,
+				E96E86682221101400BACA27 /* LaunchScreen.storyboard in Resources */,
+				E96E86652221101400BACA27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E866C2221101400BACA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E86772221101500BACA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E96E868E2221189C00BACA27 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E96E86562221100F00BACA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96E86922221391200BACA27 /* PlayViewController.swift in Sources */,
+				E96E869022211C2A00BACA27 /* VideoPlayerViewController.swift in Sources */,
+				E96E86602221100F00BACA27 /* ViewController.swift in Sources */,
+				E96E865E2221100F00BACA27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E866A2221101400BACA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96E86732221101500BACA27 /* rechackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96E86752221101500BACA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96E867E2221101500BACA27 /* rechackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E96E86702221101500BACA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96E86592221100F00BACA27 /* rechack */;
+			targetProxy = E96E866F2221101500BACA27 /* PBXContainerItemProxy */;
+		};
+		E96E867B2221101500BACA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96E86592221100F00BACA27 /* rechack */;
+			targetProxy = E96E867A2221101500BACA27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E96E86662221101400BACA27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96E86672221101400BACA27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E96E86802221101500BACA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E96E86812221101500BACA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E96E86832221101500BACA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = rechack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E96E86842221101500BACA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = rechack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E96E86862221101500BACA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				INFOPLIST_FILE = rechackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rechack.app/rechack";
+			};
+			name = Debug;
+		};
+		E96E86872221101500BACA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				INFOPLIST_FILE = rechackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rechack.app/rechack";
+			};
+			name = Release;
+		};
+		E96E86892221101500BACA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				INFOPLIST_FILE = rechackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rechack;
+			};
+			name = Debug;
+		};
+		E96E868A2221101500BACA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86H298L887;
+				INFOPLIST_FILE = rechackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0190109.rechackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rechack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E96E86552221100F00BACA27 /* Build configuration list for PBXProject "rechack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96E86802221101500BACA27 /* Debug */,
+				E96E86812221101500BACA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96E86822221101500BACA27 /* Build configuration list for PBXNativeTarget "rechack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96E86832221101500BACA27 /* Debug */,
+				E96E86842221101500BACA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96E86852221101500BACA27 /* Build configuration list for PBXNativeTarget "rechackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96E86862221101500BACA27 /* Debug */,
+				E96E86872221101500BACA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96E86882221101500BACA27 /* Build configuration list for PBXNativeTarget "rechackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96E86892221101500BACA27 /* Debug */,
+				E96E868A2221101500BACA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E96E86522221100F00BACA27 /* Project object */;
+}
